@@ -127,7 +127,7 @@ function populateOptions() {
 
       console.log("tag-selected?");
       console.log(selectTag);
-      var url = "/starter_code/samples.json";
+      var url = "/samples.json";
       //use the D3 way of nesting and binding
       d3.json(url).then(function (data) {
         names = data.names;
