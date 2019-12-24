@@ -8,7 +8,7 @@ function updatePlotly() {
   buildPlot(dataset);
 }
 
-
+var url = "https://cnjanssen.github.io/plotly-homework/samples.json";
 
 populateOptions();
 var subjID = d3.select("#selDataset");
@@ -23,7 +23,7 @@ buildPlot(first);
 
 function buildPlot(id_num) {
   //read JSON file creating a reference to it called data
-  d3.json("https://cnjanssen.github.io/plotly-homework/samples.json").then((importedData) => {
+  d3.json(url).then((importedData) => {
     // console.log(importedData);
     var data = importedData;
     var names = data['names'];
