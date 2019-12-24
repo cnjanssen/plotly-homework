@@ -23,7 +23,7 @@ buildPlot(first);
 
 function buildPlot(id_num) {
   //read JSON file creating a reference to it called data
-  d3.json("/plotly-homework/samples.json").then((importedData) => {
+  d3.json("https://cnjanssen.github.io/plotly-homework/samples.json").then((importedData) => {
     // console.log(importedData);
     var data = importedData;
     var names = data['names'];
@@ -127,7 +127,7 @@ function populateOptions() {
 
       console.log("tag-selected?");
       console.log(selectTag);
-      var url = "/samples.json";
+      var url = "https://cnjanssen.github.io/plotly-homework/samples.json";
       //use the D3 way of nesting and binding
       d3.json(url).then(function (data) {
         names = data.names;
