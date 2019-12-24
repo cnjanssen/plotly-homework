@@ -25,6 +25,7 @@ function buildPlot(id_num) {
   //read JSON file creating a reference to it called data
   d3.json(url).then((importedData) => {
     // console.log(importedData);
+    console.log("build plot");
     var data = importedData;
     var names = data['names'];
     var position = 0;
