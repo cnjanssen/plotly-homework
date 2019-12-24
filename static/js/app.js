@@ -23,7 +23,7 @@ buildPlot(first);
 
 function buildPlot(id_num) {
   //read JSON file creating a reference to it called data
-  d3.json("samples.json").then((importedData) => {
+  d3.json("/plotly-homework/samples.json").then((importedData) => {
     // console.log(importedData);
     var data = importedData;
     var names = data['names'];
